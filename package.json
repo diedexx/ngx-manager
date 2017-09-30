@@ -1,6 +1,6 @@
 {
     "name": "@bravobit/ngx-manager",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "description": "The NGX manager library",
     "main": "./dist/index.umd.js",
     "module": "./dist/index.js",
@@ -13,8 +13,6 @@
         "aot-compatible",
         "aot-compilation",
         "library",
-        "ng",
-        "seed",
         "ngx-manager",
         "typescript"
     ],
@@ -81,7 +79,6 @@
         "codecov": "^2.2.0",
         "codelyzer": "^3.0.1",
         "concurrently": "^3.4.0",
-        "copy-dir-cli": "^0.0.3",
         "css-loader": "^0.28.1",
         "gh-pages": "^1.0.0",
         "gulp": "^3.9.1",
