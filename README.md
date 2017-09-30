@@ -16,7 +16,27 @@ yarn add @bravobit/ngx-manager
 
 ### <a name="usage"></a> Usage
 
-`NgxManagerModule` should be registered in the `AppModule` with `forRoot()` static method.
+You should import our global `styles.scss` file into your project to get the CSS resets and normalize.
+
+```scss
+@import '~@bravobit/ngx-manager/styles/styles.scss';
+```
+
+You should add the following declare module to the `typings.d.ts` file to be able to add languages to the `forRoot` method call.
+
+```typescript
+declare module '*.json' {
+    const value: any;
+    export default value;
+}
+```
+
+After you have added this statement to the `typings.d.ts` file you should be able to import JSON files into your project.
+```typescript
+import * as dutch from '../languages/dutch.language.json';
+``` 
+
+`NgxManagerModule` should be registered in the `AppModule` with `forRoot()` static method to get access to all our components/pipes/services/directives.
 
 ```typescript
 import {NgModule} from '@angular/core';
@@ -26,11 +46,13 @@ import {NgxManagerModule} from '@bravobit/ngx-manager';
 
 import {AppComponent}  from './app.component';
 
+import * as dutch from '../languages/dutch.language.json';
+
 @NgModule({
     imports: [
         BrowserModule,
         NgxManagerModule.forRoot({
-            languages: {}
+            languages: {nl: dutch}
         })
     ],
     declarations: [AppComponent],
@@ -38,9 +60,4 @@ import {AppComponent}  from './app.component';
 })
 export class AppModule {
 }
-```
-To get the global styles into your project you should include our file in the `styles.scss`
-
-```scss
-@import '~@bravobit/ngx-manager/styles/styles.scss';
 ```

@@ -107,9 +107,7 @@ export class TranslationsService {
     private translate(key: string): string {
         // Validate if the language does exist in the dictionary, else throw an error.
         if (!this.dictionary.hasOwnProperty(this.language)) {
-            throw new Error(
-                `LANGUAGE_EXCEPTION: The current language is not supported '${this.language}'`
-            );
+            return key;
         }
 
         // Retrieve the current language dictionary object.
