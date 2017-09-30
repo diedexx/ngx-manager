@@ -8,7 +8,7 @@
 You can install this package locally with npm or yarn.
 
 ```bash
-# To get the latest stable version and update package.json file:
+# To get the latest stable version
 npm install @bravobit/ngx-manager --save
 # or
 yarn add @bravobit/ngx-manager
@@ -17,7 +17,6 @@ yarn add @bravobit/ngx-manager
 ### <a name="usage"></a> Usage
 
 `NgxManagerModule` should be registered in the `AppModule` with `forRoot()` static method.
-This method accepts `LibraryOptions` objects as well.
 
 ```typescript
 import {NgModule} from '@angular/core';
@@ -34,8 +33,8 @@ import {AppComponent}  from './app.component';
             languages: {}
         })
     ],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent]
+    declarations: [AppComponent],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 }
