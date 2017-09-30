@@ -39,3 +39,8 @@ import {AppComponent}  from './app.component';
 export class AppModule {
 }
 ```
+To get the global styles into your project you should include our file in the `styles.scss`
+
+```scss
+@import '~@bravobit/ngx-manager/styles/styles.scss';
+```
