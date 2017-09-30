@@ -6,7 +6,7 @@ export {TranslationsService} from './services';
 //
 // Export all the components.
 //
-export {HelloWorldComponent} from './components';
+export {FormControlComponent} from './components';
 
 //
 // Export all the pipes.

@@ -1,7 +1,9 @@
 import {ModuleWithProviders, NgModule, Optional, SkipSelf} from '@angular/core';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {CommonModule} from '@angular/common';
 import {CookieModule} from 'ngx-cookie';
 
-import {HelloWorldComponent} from './components';
+import {FormControlComponent} from './components';
 import {TranslationsService} from './services';
 import {TranslatePipe} from './pipes';
 
@@ -10,11 +12,14 @@ import {LibraryConfig} from './interfaces/library-config.interface';
 @NgModule({
     declarations: [
         // Components.
-        HelloWorldComponent,
+        FormControlComponent,
         // Pipes.
         TranslatePipe
     ],
     imports: [
+        CommonModule,
+        FormsModule,
+        ReactiveFormsModule,
         CookieModule.forRoot()
     ],
     providers: [
@@ -22,7 +27,7 @@ import {LibraryConfig} from './interfaces/library-config.interface';
     ],
     exports: [
         // Components.
-        HelloWorldComponent,
+        FormControlComponent,
         // Pipes.
         TranslatePipe
     ]

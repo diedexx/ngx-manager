@@ -28,10 +28,6 @@
         "no-string-literal": false,
         "object-literal-sort-keys": false,
         "ordered-imports": false,
-        "pipe-naming": [
-            true,
-            "my"
-        ],
         "quotemark": [
             true,
             "single",

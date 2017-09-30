@@ -1,0 +1,20 @@
+//
+// styles.scss
+//
+// Here the global helpers should be defined.
+//
+//
+// Variables: Global variables, colors and fonts.
+//
+@import './variables/colors';
+@import './variables/fonts';
+@import './variables/global';
+//
+// Tools: Mixin, functions and helpers.
+//
+@import './tools/mixins';
+//
+// Generic: Normalize and resets.
+//
+@import './generic/normalize';
+@import './generic/resets';

@@ -1,1 +1,1 @@
-export * from './hello-world/hello-world.component';
+export * from './form-control/form-control.component';

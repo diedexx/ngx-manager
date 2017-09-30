@@ -61,3 +61,8 @@ function compileSass(path, ext, file, callback) {
     });
     callback(null, compiledCss.css);
 }
+
+gulp.task('copyStyles', () => {
+    return gulp.src(['styles/**/*'])
+        .pipe(gulp.dest('dist/styles'));
+});

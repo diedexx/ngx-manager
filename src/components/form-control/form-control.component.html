@@ -1,0 +1,9 @@
+<label [ngClass]="{'input--grouped': grouped}">
+    <span class="input__label" *ngIf="label">{{ label | translate }}</span>
+    <span class="input">
+        <span class="input__icon" *ngIf="icon">
+            <i class="material-icons">{{ icon }}</i>
+        </span>
+        <ng-content></ng-content>
+    </span>
+</label>
