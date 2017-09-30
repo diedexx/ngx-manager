@@ -1,7 +1,7 @@
 :host /deep/ {
     & .input {
         width: 100%;
-        display: block;
+        display: flex;
         min-width: 80px;
         position: relative;
         border-radius: 2px;
