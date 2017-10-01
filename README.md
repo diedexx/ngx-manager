@@ -1,5 +1,5 @@
 # `ngx-manager`
->Simply add form elements to your angular 4.0+ project.
+>Simply add manager aspects to your Angular 4.0+ project. This library contains form elements such as input-wrapper/checkbox/radio/select. It also includes services for translating and notifying the user.
 
 ## <a name="get-started"></a> Get Started
 
