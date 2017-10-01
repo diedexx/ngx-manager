@@ -88,19 +88,54 @@ export class AppModule {
 ```html
 <!-- NgModel -->
 
-<bb-checkbox [(ngModel)]="checkboxOne" [label]="'My checkbox'"></bb-checkbox>
+<bb-checkbox [(ngModel)]="myCheckbox" [label]="'My checkbox'"></bb-checkbox>
 
 <!-- Reactive forms -->
 
 <form [formGroup]="form">
-    <bb-checkbox [formControlName]="checkboxOne" [label]="'My checkbox'"></bb-checkbox>
+    <bb-checkbox [formControlName]="myCheckbox" [label]="'My checkbox'"></bb-checkbox>
 </form>
 ```
 
 ### <a name="radio"></a> Radio
 
 ```html
-<bb-checkbox [(ngModel)]="checkboxOne" [label]="'My checkbox 1'"></bb-checkbox>
-<bb-checkbox [(ngModel)]="checkboxTwo" [label]="'My checkbox 2'"></bb-checkbox>
-<bb-checkbox [(ngModel)]="checkboxThree" [label]="'My checkbox 3'"></bb-checkbox>
+<!-- Coming soon -->
+```
+
+## <a name="other"></a> Other
+
+### <a name="translations"></a> Translations
+
+The `TranslationsService` can be used by using the dependency injection in Angular.
+
+```typescript
+import {TranslationsService} from '@bravobit/ngx-manager';
+import {Component, OnInit} from '@angular/core';
+
+@Component({
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss']
+})
+export class AppComponent implements OnInit {
+    
+    public constructor(private translations: TranslationsService) {
+    }
+    
+    public ngOnInit(): void {
+        // Set a new language.
+        this.translations.use('de');
+        
+        // Translate a sentence.
+        const translated = this.translations.instant('My form control placeholder');
+    }
+    
+}
+```
+
+The `TranslationPipe` can be used in an Angular component template.
+
+```html
+{{ 'Hello world!' | translate }}
 ```
