@@ -40,8 +40,10 @@ export class CheckboxComponent implements ControlValueAccessor {
     @Input() public grouped = false;
 
     // Callbacks.
-    public onTouchedCallback: () => void = () => {};
-    public onChangeCallback: (_: boolean) => void = () => {};
+    public onTouchedCallback: () => void = () => {
+    };
+    public onChangeCallback: (_: boolean) => void = () => {
+    };
 
     /**
      * Saves the new value.

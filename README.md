@@ -9,8 +9,11 @@ You can install this package locally with npm or yarn.
 
 ```bash
 # To get the latest stable version
+
 npm install @bravobit/ngx-manager --save
+
 # or
+
 yarn add @bravobit/ngx-manager
 ```
 
@@ -83,9 +86,15 @@ export class AppModule {
 ### <a name="checkbox"></a> Checkbox
 
 ```html
-<bb-checkbox [(ngModel)]="checkboxOne" [label]="'My checkbox 1'"></bb-checkbox>
-<bb-checkbox [(ngModel)]="checkboxTwo" [label]="'My checkbox 2'"></bb-checkbox>
-<bb-checkbox [(ngModel)]="checkboxThree" [label]="'My checkbox 3'"></bb-checkbox>
+<!-- NgModel -->
+
+<bb-checkbox [(ngModel)]="checkboxOne" [label]="'My checkbox'"></bb-checkbox>
+
+<!-- Reactive forms -->
+
+<form [formGroup]="form">
+    <bb-checkbox [formControlName]="checkboxOne" [label]="'My checkbox'"></bb-checkbox>
+</form>
 ```
 
 ### <a name="radio"></a> Radio

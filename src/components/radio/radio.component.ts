@@ -43,7 +43,7 @@ export class RadioComponent implements ControlValueAccessor {
      * If the radio is checked.
      * @type {boolean}
      */
-    @Input() public checked: boolean;
+    @Input() public model = false;
 
     // ControlValueAccessor callbacks.
     public onTouchedCallback: () => void = () => {
@@ -57,8 +57,8 @@ export class RadioComponent implements ControlValueAccessor {
      * @param {boolean} value The new value of the radio button.
      */
     public writeValue(value: boolean): void {
-        if (this.checked !== value) {
-            this.checked = value;
+        if (this.model !== value) {
+            this.model = value;
         }
     }
 
