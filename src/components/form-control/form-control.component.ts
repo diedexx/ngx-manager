@@ -7,9 +7,22 @@ import {Component, Input} from '@angular/core';
 })
 export class FormControlComponent {
 
-    // Inputs.
+    /**
+     * The material-icon.
+     * @type {string}
+     */
     @Input() public icon: string;
+
+    /**
+     * The label for the form-control.
+     * @type {string}
+     */
     @Input() public label: string;
+
+    /**
+     * If the form-control should have bottom margin.
+     * @type {boolean}
+     */
     @Input() public grouped = true;
 
 }

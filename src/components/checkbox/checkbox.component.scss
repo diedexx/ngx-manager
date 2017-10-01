@@ -1,0 +1,82 @@
+$size: 22px;
+
+.checkbox {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 5px;
+    align-items: center;
+
+    &--grouped { margin-bottom: 20px; }
+
+    &__input {
+        width: $size;
+        height: $size;
+        cursor: pointer;
+        min-width: $size;
+        appearance: none;
+        min-height: $size;
+        position: relative;
+        border-radius: 2px;
+        will-change: transform;
+        vertical-align: middle;
+        border: 2px solid #c9c9c9;
+        background-color: #ffffff;
+        box-shadow: inset 0 0 0 0 #4caf50;
+        transition: transform 0.3s cubic-bezier(0.2, 0.3, 0, 1),
+        box-shadow 0.3s cubic-bezier(0.2, 0.3, 0, 1),
+        border-color 0s linear 0.17s;
+
+        &:focus { outline: none; }
+
+        &:checked {
+            border-color: #4caf50;
+            box-shadow: inset 0 0 0 ($size / 2) #4caf50;
+            transition: transform 0.3s cubic-bezier(0.2, 0.3, 0, 1),
+            box-shadow 0.3s cubic-bezier(0.2, 0.3, 0, 1),
+            border-color 0s;
+        }
+
+        &:before, &:after {
+            content: '';
+            width: $size;
+            height: $size;
+            top: -($size / 13);
+            position: absolute;
+            left: -($size / 13);
+            will-change: opacity;
+            transform-origin: 0 0;
+            background-color: #ffffff;
+            transition: transform 0.3s cubic-bezier(0.2, 0.3, 0, 1), opacity 0.3s cubic-bezier(0.2, 0.3, 0, 1);
+            transform: translate($size * 0.2728, $size * 0.4279) rotate(44.91deg) scale(0.3411, 0.1);
+        }
+
+        &:after {
+            transform: translate($size * 0.8494, $size * 0.35) rotate(135.22deg) scale(0.5612, 0.1);
+        }
+
+        &:not(:checked) {
+            &:before { transform: translate($size * 0.505, $size * 0.455) rotate(44.91deg) scale(0.1, 0.1); }
+            &:after { transform: translate($size * 0.575, $size * 0.525) rotate(135.22deg) scale(0.1, 0.1); }
+        }
+    }
+
+    &__label {
+        font-weight: 400;
+        margin-left: 10px;
+        user-select: none;
+    }
+
+    &--disabled {
+        cursor: default;
+        pointer-events: none;
+
+        & > .checkbox__input {
+            box-shadow: inset 0 0 0 0 rgba(204, 204, 204, 0.64);
+
+            &:checked {
+                border-color: rgba(204, 204, 204, 0.64);
+                box-shadow: inset 0 0 0 ($size / 2) rgba(204, 204, 204, 0.64);
+            }
+        }
+    }
+}

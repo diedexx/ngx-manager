@@ -6,7 +6,7 @@ export {TranslationsService} from './services';
 //
 // Export all the components.
 //
-export {FormControlComponent} from './components';
+export {FormControlComponent, CheckboxComponent} from './components';
 
 //
 // Export all the pipes.
