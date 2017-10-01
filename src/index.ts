@@ -1,17 +1,25 @@
 //
 // Export all the services.
 //
-export {TranslationsService} from './services';
+export {
+    TranslationsService
+} from './services';
 
 //
 // Export all the components.
 //
-export {FormControlComponent, CheckboxComponent} from './components';
+export {
+    FormControlComponent,
+    CheckboxComponent,
+    RadioComponent
+} from './components';
 
 //
 // Export all the pipes.
 //
-export {TranslatePipe} from './pipes';
+export {
+    TranslatePipe
+} from './pipes';
 
 //
 // Export all the directives.
@@ -21,7 +29,9 @@ export {} from './directives';
 //
 // Export all the pipes.
 //
-export {LibraryConfig} from './interfaces';
+export {
+    LibraryConfig
+} from './interfaces';
 
 //
 // Export the library module.

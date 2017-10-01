@@ -17,23 +17,21 @@ $size: 22px;
         min-height: $size;
         position: relative;
         border-radius: 2px;
+        -moz-appearance: none;
         will-change: transform;
         vertical-align: middle;
+        -webkit-appearance: none;
         border: 2px solid #c9c9c9;
         background-color: #ffffff;
         box-shadow: inset 0 0 0 0 #4caf50;
-        transition: transform 0.3s cubic-bezier(0.2, 0.3, 0, 1),
-        box-shadow 0.3s cubic-bezier(0.2, 0.3, 0, 1),
-        border-color 0s linear 0.17s;
+        transition: transform 0.3s cubic-bezier(0.2, 0.3, 0, 1), box-shadow 0.3s cubic-bezier(0.2, 0.3, 0, 1), border-color 0s linear 0.17s;
 
         &:focus { outline: none; }
 
         &:checked {
             border-color: #4caf50;
             box-shadow: inset 0 0 0 ($size / 2) #4caf50;
-            transition: transform 0.3s cubic-bezier(0.2, 0.3, 0, 1),
-            box-shadow 0.3s cubic-bezier(0.2, 0.3, 0, 1),
-            border-color 0s;
+            transition: transform 0.3s cubic-bezier(0.2, 0.3, 0, 1), box-shadow 0.3s cubic-bezier(0.2, 0.3, 0, 1), border-color 0s;
         }
 
         &:before, &:after {

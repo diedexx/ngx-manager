@@ -3,7 +3,11 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CommonModule} from '@angular/common';
 import {CookieModule} from 'ngx-cookie';
 
-import {FormControlComponent, CheckboxComponent} from './components';
+import {
+    FormControlComponent,
+    CheckboxComponent,
+    RadioComponent
+} from './components';
 
 import {TranslationsService} from './services';
 import {TranslatePipe} from './pipes';
@@ -15,6 +19,7 @@ import {LibraryConfig} from './interfaces/library-config.interface';
         // Components.
         FormControlComponent,
         CheckboxComponent,
+        RadioComponent,
         // Pipes.
         TranslatePipe
     ],
@@ -31,6 +36,7 @@ import {LibraryConfig} from './interfaces/library-config.interface';
         // Components.
         FormControlComponent,
         CheckboxComponent,
+        RadioComponent,
         // Pipes.
         TranslatePipe
     ]

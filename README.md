@@ -61,3 +61,37 @@ import * as dutch from '../languages/dutch.language.json';
 export class AppModule {
 }
 ```
+
+## <a name="components"></a> Components
+
+### <a name="form-control"></a> Form-control
+
+```angular2html
+<!-- Input (text/number/date/etc.) -->
+
+<bb-form-control [label]="'My email input'" [icon]="'email'">
+    <input [(ngModel)]="myEmail" placeholder="johndoe@gmail.com">
+</bb-form-control>
+
+<!-- Textarea -->
+
+<bb-form-control [label]="'My email textarea'" [icon]="'email'">
+    <textarea [(ngModel)]="myEmail" placeholder="johndoe@gmail.com" rows="10"></textarea>
+</bb-form-control>
+```
+
+### <a name="checkbox"></a> Checkbox
+
+```angular2html
+<bb-checkbox [(ngModel)]="checkboxOne" [label]="'My checkbox 1'"></bb-checkbox>
+<bb-checkbox [(ngModel)]="checkboxTwo" [label]="'My checkbox 2'"></bb-checkbox>
+<bb-checkbox [(ngModel)]="checkboxThree" [label]="'My checkbox 3'"></bb-checkbox>
+```
+
+### <a name="radio"></a> Radio
+
+```angular2html
+<bb-checkbox [(ngModel)]="checkboxOne" [label]="'My checkbox 1'"></bb-checkbox>
+<bb-checkbox [(ngModel)]="checkboxTwo" [label]="'My checkbox 2'"></bb-checkbox>
+<bb-checkbox [(ngModel)]="checkboxThree" [label]="'My checkbox 3'"></bb-checkbox>
+```

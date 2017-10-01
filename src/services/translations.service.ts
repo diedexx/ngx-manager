@@ -5,10 +5,16 @@ import {CookieService} from 'ngx-cookie';
 @Injectable()
 export class TranslationsService {
 
-    // The current language.
+    /**
+     * The current selected language.
+     * @type {string}
+     */
     private language: string;
 
-    // The available languages (will be filled in the forRoot method).
+    /**
+     * The dictionary containing the translations.
+     * @type {object}
+     */
     private dictionary = {};
 
     /**
@@ -43,36 +49,6 @@ export class TranslationsService {
     }
 
     /**
-     * Verifies if the language was supported.
-     *
-     * @param {string} language The supplied language.
-     *
-     * @returns {string} The validated language.
-     */
-    public verify(language: string): string {
-        // Check if the language exists.
-        const hasProperty = language ? this.dictionary.hasOwnProperty(language) : false;
-
-        if (language !== null && typeof language === 'object' && hasProperty) {
-            return language;
-        }
-
-        // Fetch the browser language.
-        let browserLanguage = navigator.language;
-
-        // Check if the browsers language is supported in the system.
-        if (!this.dictionary.hasOwnProperty(browserLanguage)) {
-            browserLanguage = Object.keys(this.dictionary)[0] || 'en';
-        }
-
-        // If the browser language was not supported put one in the cookie.
-        this.cookies.put('APP_TRANSLATION', browserLanguage);
-
-        // Return the browser language.
-        return browserLanguage;
-    }
-
-    /**
      * Set the current language to a new value.
      *
      * @param {string} language The new language.
@@ -95,6 +71,36 @@ export class TranslationsService {
      */
     public instant(key: string): string {
         return this.translate(key);
+    }
+
+    /**
+     * Verifies if the language was supported.
+     *
+     * @param {string} language The supplied language.
+     *
+     * @returns {string} The validated language.
+     */
+    private verify(language: string): string {
+        // Check if the language exists.
+        const hasProperty = language ? this.dictionary.hasOwnProperty(language) : false;
+
+        if (language !== null && typeof language === 'object' && hasProperty) {
+            return language;
+        }
+
+        // Fetch the browser language.
+        let browserLanguage = navigator.language;
+
+        // Check if the browsers language is supported in the system.
+        if (!this.dictionary.hasOwnProperty(browserLanguage)) {
+            browserLanguage = Object.keys(this.dictionary)[0] || 'en';
+        }
+
+        // If the browser language was not supported put one in the cookie.
+        this.cookies.put('APP_TRANSLATION', browserLanguage);
+
+        // Return the browser language.
+        return browserLanguage;
     }
 
     /**
