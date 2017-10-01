@@ -66,7 +66,7 @@ export class AppModule {
 
 ### <a name="form-control"></a> Form-control
 
-```angular2html
+```html
 <!-- Input (text/number/date/etc.) -->
 
 <bb-form-control [label]="'My email input'" [icon]="'email'">
@@ -82,7 +82,7 @@ export class AppModule {
 
 ### <a name="checkbox"></a> Checkbox
 
-```angular2html
+```html
 <bb-checkbox [(ngModel)]="checkboxOne" [label]="'My checkbox 1'"></bb-checkbox>
 <bb-checkbox [(ngModel)]="checkboxTwo" [label]="'My checkbox 2'"></bb-checkbox>
 <bb-checkbox [(ngModel)]="checkboxThree" [label]="'My checkbox 3'"></bb-checkbox>
@@ -90,7 +90,7 @@ export class AppModule {
 
 ### <a name="radio"></a> Radio
 
-```angular2html
+```html
 <bb-checkbox [(ngModel)]="checkboxOne" [label]="'My checkbox 1'"></bb-checkbox>
 <bb-checkbox [(ngModel)]="checkboxTwo" [label]="'My checkbox 2'"></bb-checkbox>
 <bb-checkbox [(ngModel)]="checkboxThree" [label]="'My checkbox 3'"></bb-checkbox>
