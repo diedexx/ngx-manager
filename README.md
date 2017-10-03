@@ -100,7 +100,19 @@ export class AppModule {
 ### <a name="radio"></a> Radio
 
 ```html
-<!-- Coming soon -->
+<!-- NgModel -->
+
+<bb-radio [(ngModel)]="gender" [name]="'gender'" [label]="'Male'" [value]="'male'"></bb-radio>
+<bb-radio [(ngModel)]="gender" [name]="'gender'" [label]="'Female'" [value]="'female'"></bb-radio>
+<bb-radio [(ngModel)]="gender" [name]="'gender'" [label]="'Male and female'" [value]="'both'"></bb-radio>
+
+<!-- Reactive forms -->
+
+<form [formGroup]="form">
+    <bb-radio [formControlName]="'gender'" [name]="'gender'" [label]="'Male'" [value]="'male'"></bb-radio>
+    <bb-radio [formControlName]="'gender'" [name]="'gender'" [label]="'Female'" [value]="'female'"></bb-radio>
+    <bb-radio [formControlName]="'gender'" [name]="'gender'" [label]="'Male and female'" [value]="'both'"></bb-radio>
+</form>
 ```
 
 ## <a name="other"></a> Other

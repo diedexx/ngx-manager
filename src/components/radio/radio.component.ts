@@ -22,6 +22,12 @@ export class RadioComponent implements ControlValueAccessor {
     @Input() public value: string;
 
     /**
+     * The name of the radio.
+     * @type {string}
+     */
+    @Input() public name: string;
+
+    /**
      * The label for the radio.
      * @type {string}
      */
