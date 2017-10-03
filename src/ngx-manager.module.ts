@@ -2,11 +2,13 @@ import {ModuleWithProviders, NgModule, Optional, SkipSelf} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CommonModule} from '@angular/common';
 import {CookieModule} from 'ngx-cookie';
+import {SelectModule} from 'ng-select';
 
 import {
     FormControlComponent,
     CheckboxComponent,
-    RadioComponent
+    RadioComponent,
+    SelectComponent
 } from './components';
 
 import {TranslationsService} from './services';
@@ -20,6 +22,7 @@ import {LibraryConfig} from './interfaces/library-config.interface';
         FormControlComponent,
         CheckboxComponent,
         RadioComponent,
+        SelectComponent,
         // Pipes.
         TranslatePipe
     ],
@@ -27,7 +30,8 @@ import {LibraryConfig} from './interfaces/library-config.interface';
         CommonModule,
         FormsModule,
         ReactiveFormsModule,
-        CookieModule.forRoot()
+        CookieModule.forRoot(),
+        SelectModule
     ],
     providers: [
         TranslationsService
@@ -37,6 +41,7 @@ import {LibraryConfig} from './interfaces/library-config.interface';
         FormControlComponent,
         CheckboxComponent,
         RadioComponent,
+        SelectComponent,
         // Pipes.
         TranslatePipe
     ]

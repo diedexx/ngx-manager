@@ -1,0 +1,7 @@
+<bb-form-control [grouped]="grouped" [label]="label" [icon]="icon">
+    <ng-select [disabled]="disabled" [options]="items" [allowClear]="true" [(ngModel)]="result"
+               (ngModelChange)="onChangeCallback(result)"
+               [placeholder]="'Click to select an item from the list' | translate"
+               [notFoundMsg]="'No item were found' | translate"
+               [filterPlaceholder]="'Search for items in the list' | translate"></ng-select>
+</bb-form-control>

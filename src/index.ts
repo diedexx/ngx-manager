@@ -11,7 +11,8 @@ export {
 export {
     FormControlComponent,
     CheckboxComponent,
-    RadioComponent
+    RadioComponent,
+    SelectComponent
 } from './components';
 
 //
@@ -27,10 +28,11 @@ export {
 export {} from './directives';
 
 //
-// Export all the pipes.
+// Export all the interfaces.
 //
 export {
-    LibraryConfig
+    LibraryConfig,
+    Option
 } from './interfaces';
 
 //

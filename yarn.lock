@@ -3784,6 +3784,10 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
+ng-select@^1.0.0-beta.6:
+  version "1.0.0-beta.6"
+  resolved "https://registry.yarnpkg.com/ng-select/-/ng-select-1.0.0-beta.6.tgz#6f835247c1093bb380572b2705df75ff390c2f4d"
+
 ngx-cookie@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/ngx-cookie/-/ngx-cookie-1.0.0.tgz#004fc653febd849b4dd3ee2c63c4cf171f464da9"
