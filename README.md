@@ -83,6 +83,18 @@ export class AppModule {
 </bb-form-control>
 ```
 
+### <a name="select"></a> Select
+
+```html
+<!-- NgModel -->
+
+<bb-select [(ngModel)]="select" [label]="'My form control'" [items]="[]"></bb-select>
+
+<!-- Reactive forms -->
+
+<bb-select [formControlName]="'select'" [label]="'My form control'" [items]="[]"></bb-select>
+```
+
 ### <a name="checkbox"></a> Checkbox
 
 ```html

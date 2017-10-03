@@ -3,7 +3,7 @@ import {Component, forwardRef, Input} from '@angular/core';
 import {Option} from '../../interfaces/option.interface';
 
 @Component({
-    selector: 'app-select',
+    selector: 'bb-select',
     templateUrl: './select.component.html',
     styleUrls: ['./select.component.scss'],
     providers: [
