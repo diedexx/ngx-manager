@@ -14,7 +14,8 @@ export {
     RadioComponent,
     SelectComponent,
     ButtonComponent,
-    ButtonGroupComponent
+    ButtonGroupComponent,
+    CardComponent
 } from './components';
 
 //
@@ -34,7 +35,9 @@ export {} from './directives';
 //
 export {
     LibraryConfig,
-    Option
+    Option,
+    CardEvent,
+    CardButton
 } from './interfaces';
 
 //

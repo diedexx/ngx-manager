@@ -10,7 +10,8 @@ import {
     RadioComponent,
     SelectComponent,
     ButtonComponent,
-    ButtonGroupComponent
+    ButtonGroupComponent,
+    CardComponent
 } from './components';
 
 import {TranslationsService} from './services';
@@ -27,6 +28,7 @@ import {LibraryConfig} from './interfaces/library-config.interface';
         SelectComponent,
         ButtonComponent,
         ButtonGroupComponent,
+        CardComponent,
         // Pipes.
         TranslatePipe
     ],
@@ -48,6 +50,7 @@ import {LibraryConfig} from './interfaces/library-config.interface';
         SelectComponent,
         ButtonComponent,
         ButtonGroupComponent,
+        CardComponent,
         // Pipes.
         TranslatePipe
     ]
