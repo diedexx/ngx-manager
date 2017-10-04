@@ -127,6 +127,21 @@ export class AppModule {
 </form>
 ```
 
+### <a name="buttons"></a> Buttons
+
+```html
+<!-- Default -->
+
+<bb-button [value]="'Do something'"></bb-button>
+
+<!-- Grouped -->
+
+<bb-button-group [type]="'right'">
+    <bb-button [color]="'grey'" [value]="'Reset'" [type]="'reset'"></bb-button>
+    <bb-button [value]="'Submit'" [type]="'submit'"></bb-button>
+</bb-button-group>
+```
+
 ## <a name="other"></a> Other
 
 ### <a name="translations"></a> Translations

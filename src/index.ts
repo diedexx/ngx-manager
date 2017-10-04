@@ -12,7 +12,9 @@ export {
     FormControlComponent,
     CheckboxComponent,
     RadioComponent,
-    SelectComponent
+    SelectComponent,
+    ButtonComponent,
+    ButtonGroupComponent
 } from './components';
 
 //

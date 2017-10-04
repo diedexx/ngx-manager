@@ -8,7 +8,9 @@ import {
     FormControlComponent,
     CheckboxComponent,
     RadioComponent,
-    SelectComponent
+    SelectComponent,
+    ButtonComponent,
+    ButtonGroupComponent
 } from './components';
 
 import {TranslationsService} from './services';
@@ -23,6 +25,8 @@ import {LibraryConfig} from './interfaces/library-config.interface';
         CheckboxComponent,
         RadioComponent,
         SelectComponent,
+        ButtonComponent,
+        ButtonGroupComponent,
         // Pipes.
         TranslatePipe
     ],
@@ -42,6 +46,8 @@ import {LibraryConfig} from './interfaces/library-config.interface';
         CheckboxComponent,
         RadioComponent,
         SelectComponent,
+        ButtonComponent,
+        ButtonGroupComponent,
         // Pipes.
         TranslatePipe
     ]
