@@ -65,7 +65,7 @@ export class AppModule {
 }
 ```
 
-## <a name="components"></a> Components
+## <a name="form-components"></a> Form components
 
 ### <a name="form-control"></a> Form-control
 
@@ -141,6 +141,17 @@ export class AppModule {
     <bb-button [value]="'Submit'" [type]="'submit'"></bb-button>
 </bb-button-group>
 ```
+
+## <a name="structure-components"></a> Structure components
+
+### <a name="card"></a> Card
+
+```html
+<bb-card [title]="'My card title'" [rightButtonBar]="[{id: 'delete', icon: 'delete'}]">
+    <!-- Content -->
+</bb-card>
+```
+
 
 ## <a name="other"></a> Other
 

@@ -2,7 +2,7 @@ import {CardButton, CardEvent} from '../../interfaces/card.interface';
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
-    selector: 'app-card',
+    selector: 'bb-card',
     templateUrl: './card.component.html',
     styleUrls: ['./card.component.scss']
 })
