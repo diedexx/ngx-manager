@@ -1,4 +1,4 @@
-# `ngx-manager`
+# `NGX-manager`
 >Simply add manager aspects to your Angular 4.0+ project. This library contains form elements such as input-wrapper/checkbox/radio/select. It also includes services for translating and notifying the user.
 
 ## <a name="get-started"></a> Get Started
@@ -17,12 +17,34 @@ npm install @bravobit/ngx-manager --save
 yarn add @bravobit/ngx-manager
 ```
 
+NGX-manager has some peer dependencies you can install locally with npm or yarn.
+
+```bash
+# To get the latest stable versions
+
+npm install ng-select ngx-cookie --save
+
+# or
+
+yarn add ng-select ngx-cookie
+```
+
 ### <a name="usage"></a> Usage
 
 You should import our global `styles.scss` file into your project to get the CSS resets and normalize.
 
 ```scss
 @import '~@bravobit/ngx-manager/styles/styles.scss';
+```
+
+You should add the following imports to your imports array.
+
+```typescript
+imports: [
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
+]
 ```
 
 You should add the following declare module to the `typings.d.ts` file to be able to add languages to the `forRoot` method call.
@@ -54,6 +76,8 @@ import * as dutch from '../languages/dutch.language.json';
 @NgModule({
     imports: [
         BrowserModule,
+        FormsModule,
+        ReactiveFormsModule,
         NgxManagerModule.forRoot({
             languages: {nl: dutch}
         })
