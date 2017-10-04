@@ -1,0 +1,27 @@
+.modal {
+    width: 100%;
+    filter: none;
+    max-width: 750px;
+    margin: 40px auto 0;
+    will-change: transform, opacity;
+
+    &--small { max-width: 400px; }
+
+    &__wrapper {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        overflow-y: auto;
+        will-change: opacity;
+        padding: 40px 20px 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+:host /deep/ {
+    .card-body {
+        overflow-x: inherit;
+    }
+}

@@ -1,4 +1,5 @@
 import {ModuleWithProviders, NgModule, Optional, SkipSelf} from '@angular/core';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CommonModule} from '@angular/common';
 import {CookieModule} from 'ngx-cookie';
@@ -11,7 +12,8 @@ import {
     SelectComponent,
     ButtonComponent,
     ButtonGroupComponent,
-    CardComponent
+    CardComponent,
+    ModalComponent
 } from './components';
 
 import {TranslationsService} from './services';
@@ -30,6 +32,7 @@ import {LibraryConfig} from './interfaces/library-config.interface';
         ButtonComponent,
         ButtonGroupComponent,
         CardComponent,
+        ModalComponent,
         // Directives.
         ClickOutsideDirective,
         // Pipes.
@@ -38,6 +41,7 @@ import {LibraryConfig} from './interfaces/library-config.interface';
     imports: [
         CommonModule,
         FormsModule,
+        BrowserAnimationsModule,
         ReactiveFormsModule,
         CookieModule.forRoot(),
         SelectModule
@@ -54,6 +58,7 @@ import {LibraryConfig} from './interfaces/library-config.interface';
         ButtonComponent,
         ButtonGroupComponent,
         CardComponent,
+        ModalComponent,
         // Directives.
         ClickOutsideDirective,
         // Pipes.

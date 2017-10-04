@@ -5,3 +5,4 @@ export * from './select/select.component';
 export * from './button/button.component';
 export * from './button-group/button-group.component';
 export * from './card/card.component';
+export * from './modal/modal.component';
