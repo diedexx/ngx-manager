@@ -1,10 +1,10 @@
 <div [@modalWrapperState]="wrapperState" (@modalWrapperState.done)="animationDone($event)" class="modal__wrapper">
     <div [@modalState]="state" [class]="'modal modal--' + modifier"
          bbClickOutside (clickOutside)="onClickOutside($event)">
-        <app-card [title]="title" [leftButtonBar]="[{id: 'goBackModal', icon: 'arrow_back'}]"
+        <bb-card [title]="title" [leftButtonBar]="[{id: 'goBackModal', icon: 'arrow_back'}]"
                   [rightButtonBar]="rightButtonBar" (onButtonClicked)="onClick($event)">
             <ng-content></ng-content>
-        </app-card>
+        </bb-card>
     </div>
 
     <div *ngIf="state !== 'active' && !initial"
