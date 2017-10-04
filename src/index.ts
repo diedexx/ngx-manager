@@ -28,7 +28,9 @@ export {
 //
 // Export all the directives.
 //
-export {} from './directives';
+export {
+    ClickOutsideDirective
+} from './directives';
 
 //
 // Export all the interfaces.

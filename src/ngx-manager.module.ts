@@ -15,6 +15,7 @@ import {
 } from './components';
 
 import {TranslationsService} from './services';
+import {ClickOutsideDirective} from './directives';
 import {TranslatePipe} from './pipes';
 
 import {LibraryConfig} from './interfaces/library-config.interface';
@@ -29,6 +30,8 @@ import {LibraryConfig} from './interfaces/library-config.interface';
         ButtonComponent,
         ButtonGroupComponent,
         CardComponent,
+        // Directives.
+        ClickOutsideDirective,
         // Pipes.
         TranslatePipe
     ],
@@ -51,6 +54,8 @@ import {LibraryConfig} from './interfaces/library-config.interface';
         ButtonComponent,
         ButtonGroupComponent,
         CardComponent,
+        // Directives.
+        ClickOutsideDirective,
         // Pipes.
         TranslatePipe
     ]
