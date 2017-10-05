@@ -17,8 +17,14 @@ import 'rxjs/add/operator/first';
             transition('inactive => active', animate(`220ms cubic-bezier(0.0, 0.0, 0.2, 1)`)),
             transition('active => inactive', animate(`220ms cubic-bezier(0.0, 0.0, 0.2, 1)`)),
 
-            transition('inactive => void', [animate(220, style({transform: 'translateY(-20px) scale(0.98)', opacity: 0}))]),
-            transition('void => active', [style({transform: 'translateY(-20px) scale(0.98)', opacity: 0}), animate(220)])
+            transition('inactive => void', [animate(220, style({
+                transform: 'translateY(-20px) scale(0.98)',
+                opacity: 0
+            }))]),
+            transition('void => active', [style({
+                transform: 'translateY(-20px) scale(0.98)',
+                opacity: 0
+            }), animate(220)])
         ]),
         trigger('modalWrapperState', [
             state('inactive', style({opacity: 0})),
@@ -64,7 +70,12 @@ export class ModalComponent implements OnInit {
     }
 
     public onClickOutside(event: Object): void {
-        if (event && event['value'] === true && this.back && event['target'].className.includes('modal__wrapper')) {
+        if (event
+            && this.back
+            && event['value'] === true
+            && event['target']
+            && event['target'].className
+            && event['target'].className.includes('modal__wrapper')) {
             this.quit();
         }
     }

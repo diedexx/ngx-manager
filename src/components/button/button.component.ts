@@ -12,7 +12,8 @@ export class ButtonComponent {
     @Input() public icon: string;
     @Input() public loading: boolean;
     @Input() public disabled: boolean;
+    @Input() public reversed: boolean;
     @Input() public type = 'button';
-    @Input() public color = 'green';
+    @Input() public color = 'blue';
 
 }

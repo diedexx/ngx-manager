@@ -1,9 +1,9 @@
 <button [attr.type]="type" [disabled]="disabled" class="button {{ 'button--' + color }}"
-        [ngClass]="{'button--loading': loading}">
+        [ngClass]="{'button--loading': loading, 'button--reversed': reversed}">
     <svg width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
          preserveAspectRatio="xMidYMid" class="lds-ring">
         <circle cx="50" cy="50" r="30" stroke-width="10" fill="none"></circle>
-        <circle cx="50" cy="50" r="30" stroke="#9f9f9f" stroke-width="10" fill="none" transform="rotate(144 50 50)">
+        <circle cx="50" cy="50" r="30" stroke="#ffffff" stroke-width="10" fill="none" transform="rotate(144 50 50)">
             <animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 50 50;360 50 50"
                               keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animateTransform>
             <animate attributeName="stroke-dasharray" calcMode="linear"
@@ -12,7 +12,7 @@
         </circle>
     </svg>
 
-    <i class="material-icons" *ngIf="icon">{{ icon }}</i>
+    <i class="material-icons button__icon" *ngIf="icon">{{ icon }}</i>
 
     <span class="button__text" *ngIf="value">{{ value | translate }}</span>
 </button>
