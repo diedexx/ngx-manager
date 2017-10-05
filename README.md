@@ -1,5 +1,5 @@
 # `NGX-manager`
->Simply add manager aspects to your Angular 4.0+ project. This library contains form elements such as input-wrapper/checkbox/radio/select. It also includes services for translating and notifying the user.
+Simply add manager aspects to your Angular 4.0+ project. This library contains form elements such as input-wrapper/checkbox/radio/select. It also includes services for translating and notifying the user.
 
 ## <a name="get-started"></a> Get Started
 
@@ -56,7 +56,7 @@ declare module '*.json' {
 }
 ```
 
-After you have added this statement to the `typings.d.ts` file you should be able to import JSON files into your project.
+After you have added this statement to the `typings.d.ts` file, you should be able to import JSON files into your project.
 ```typescript
 import * as dutch from '../languages/dutch.language.json';
 ``` 
