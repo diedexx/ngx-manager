@@ -6,8 +6,6 @@
         position: relative;
         background-color: #ffffff;
 
-        &--grouped { margin-bottom: 20px; }
-
         &__label {
             display: block;
             margin-bottom: 5px;
@@ -29,7 +27,16 @@
             background-color: transparent;
 
             & + input, & + textarea { padding-left: 34px; padding-right: 10px; }
+
+            &--reversed {
+                right: 0;
+                left: auto;
+
+                & + input, & + textarea { padding-left: 10px; padding-right: 34px; }
+            }
         }
+
+        &--grouped { margin-bottom: 20px; }
     }
 
     input, textarea {

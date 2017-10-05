@@ -8,7 +8,7 @@ import {Component, Input} from '@angular/core';
 export class FormControlComponent {
 
     /**
-     * The material-icon.
+     * The material-icon identifier.
      * @type {string}
      */
     @Input() public icon: string;
@@ -18,6 +18,12 @@ export class FormControlComponent {
      * @type {string}
      */
     @Input() public label: string;
+
+    /**
+     * If the icon should be reversed.
+     * @type {boolean}
+     */
+    @Input() public reversed = false;
 
     /**
      * If the form-control should have bottom margin.
