@@ -27,12 +27,14 @@
             background-color: transparent;
 
             & + input, & + textarea { padding-left: 34px; padding-right: 10px; }
+            & + ng-select > div { padding-left: 24px; }
 
             &--reversed {
                 right: 0;
                 left: auto;
 
                 & + input, & + textarea { padding-left: 10px; padding-right: 34px; }
+                & + ng-select > div { padding-left: 0; padding-right: 34px; }
             }
         }
 
