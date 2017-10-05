@@ -3,21 +3,27 @@
 :host /deep/ {
     ng-select {
         width: 100%;
-        height: 44px;
+        height: 34px;
         min-width: 80px;
         position: relative;
         border-radius: 3px;
+        border: 1px solid #bdc4c9;
         background-color: transparent;
 
         > div {
             border: none !important;
-            height: 44px !important;
+            height: 34px !important;
 
             > div.single {
-                height: 44px !important;
+                height: 32px !important;
+
+                > div.placeholder {
+                    color: #aaaaaa !important;
+                }
 
                 > div.placeholder, > div.toggle, > div.clear, > div.value {
-                    line-height: 44px !important;
+                    color: #3d464d;
+                    line-height: 34px !important;
                 }
             }
         }
@@ -25,7 +31,20 @@
 
     select-dropdown {
         > div {
-            border: 2px solid #c9c9c9;
+            top: 46px;
+            border-radius: 3px;
+            border: 1px solid #bdc4c9;
+
+            & > div.options {
+                border-radius: 2px;
+
+                ul {
+                    border-radius: 2px;
+
+                    & > li:first-child { border-top-left-radius: 2px; border-top-right-radius: 2px; }
+                    & > li:last-child { border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; }
+                }
+            }
         }
     }
 }

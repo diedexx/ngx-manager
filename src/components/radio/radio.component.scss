@@ -22,7 +22,7 @@
                 border-radius: 50%;
                 vertical-align: top;
                 display: inline-block;
-                border: 2px solid #c9c9c9;
+                border: 1px solid #bdc4c9;
                 background-color: #ffffff;
             }
 
@@ -70,5 +70,9 @@
                 &:before { border-color: rgba(204, 204, 204, 0.64); }
             }
         }
+    }
+
+    &:focus {
+        & > .radio__input + .radio__element:before { box-shadow: 0 0 0 2px rgba(3,102,214,0.1); }
     }
 }

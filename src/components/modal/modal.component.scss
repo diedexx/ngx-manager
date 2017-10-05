@@ -21,7 +21,5 @@
 }
 
 :host /deep/ {
-    .card-body {
-        overflow-x: inherit;
-    }
+    .card-body { overflow-x: inherit; }
 }

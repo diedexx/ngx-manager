@@ -73,8 +73,7 @@ export class ModalComponent implements OnInit {
         if (event
             && this.back
             && event['value'] === true
-            && event['target']
-            && event['target'].className
+            && typeof event['target'].className === 'string'
             && event['target'].className.includes('modal__wrapper')) {
             this.quit();
         }
