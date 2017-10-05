@@ -46,4 +46,6 @@ export {
 //
 // Export the library module.
 //
-export {NgxManagerModule} from './ngx-manager.module';
+export {
+    NgxManagerModule
+} from './ngx-manager.module';
