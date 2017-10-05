@@ -7,7 +7,16 @@ import {Component, Input} from '@angular/core';
 })
 export class ButtonGroupComponent {
 
+    /**
+     * The type of the button-group (left|right).
+     * @type {string}
+     */
     @Input() type = 'left';
+
+    /**
+     * If the button group should take the full width.
+     * @type {boolean}
+     */
     @Input() full = false;
 
 }
