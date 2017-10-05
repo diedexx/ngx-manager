@@ -56,7 +56,7 @@ declare module '*.json' {
 }
 ```
 
-After you have added this statement to the `typings.d.ts` file you should be able to import JSON files into your project.
+After you have added this statement to the `typings.d.ts` file, you should be able to import JSON files into your project.
 ```typescript
 import * as dutch from '../languages/dutch.language.json';
 ``` 
